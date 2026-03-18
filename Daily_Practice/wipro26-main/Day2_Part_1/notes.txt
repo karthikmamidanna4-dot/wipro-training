@@ -1,0 +1,110 @@
+6 -> 1,2,3
+	6
+
+String Functions : 
+
+Length : Displays total no.of chars in a string
+
+IndexOf() : used to display first occurrence of given char in a string. If char does not exists it returns -1 
+
+Strings in C# are immutable, means once we declare a string, we cannot alter value by using any string functions. To overcome this we need the help of StringBuilder.
+
+Arrays : An array is the finite ordered set of homogeneous elements, means all the elements belongs to same data type. All the elements in array are stored in successive memory locations. 
+
+syntax :
+________
+
+int[] a = new int[]{12,4,11,62,23};
+
+a[0]=12;
+a[1]=4;
+a[2]=11;
+a[3]=62;
+a[4]=23;
+
+How Internally foreach loop getting executed 
+
+  int[] a = new int[] { 12, 66, 31, 66, 23, 122 };
+  //for(int i=0;i<a.Length;i++)
+  //{
+  //    Console.WriteLine(a[i]);
+  //}
+  foreach(int i in a)
+  {
+      Console.WriteLine(i);
+  }
+
+in foreach loop, we have predefined collection called Enumerator, there at first variable i points to the first element in array A, after processing first element, it checks the next element is there or not by using HasMoreElements(), if it returns true, it moves to the next element by using NextElement(). It repeats as soon as HasMoreElements() returns true. 
+
++++++++++++++++++++++
+
+Multi-Dimentional Arrays : 
+
+Allows you to store data w.r.t. Rows and Columns. 
+
+A jagged array is an array of arrays, where each element is itself an array that can have a different length. Rows are fixed at declaration, but columns can vary. It can also combine with multidimensional arrays.
+
+
+1) Write a program to read a sentence and print alternate words in reverse order
+
+example : 
+
+welcome to C# programming from Wipro Training
+
+welcome ot C# gnimmargorp from orpiW Training 
+
+2) Write a program to count no.of palindrome words in the given sentence 
+
+Welcome All liril is soap Malayalam is language madam is heading company 
+
+Total Count of Palindrome Words : 3 
+
+There are 2 types of memories known as 
+
+(I) stack
+
+(ii) heap 
+
+*** value types will be stored in STACK memory, reference types will be stored in HEAP memory ***
+
+The top level class in .NET is Object 
+
+The default namespace in .NET is System;
+
+int x;
+
+x="Hello";
+x=12;
+x=12.5;
+
+object x;
+x="Hello";
+x=12;
+x=12.5;
+
+Boxing and Unboxing : The concept of converting value types to reference types known as boxing, and reference types of value types known as unboxing. 
+
+object is the type, that which can be used for boxing and unboxing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

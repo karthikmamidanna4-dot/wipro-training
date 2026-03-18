@@ -1,0 +1,338 @@
+What is .NET
+
+	.NET is a framework 
+
+Microsoft introduced .NET framework for building the gap between interoperability between applications.  It is a foundation on which, where we can build, design, develop and deploy the applications. 
+
+Why .NET 
+
+.NET framework contains more than 270+ language characteristics have been formed as a single group, where we can use one language features within another language. 
+
+.NET framework lets developers write applications in multiple languages like C#, VB etc  that can run on any env without changing source code, 
+ensures efficiently and platform independent applications we can make.
+
+The main objective of .NET framework is reusable code and consistent behaviour across various applications.
+
+Characterstics of .NET
+
+   -> Supports large no.of programming languages
+
+   -> Provides a huge class libraries for common operations
+
+   -> Handles memory management automatically through GC
+
+   -> Ensures security through code access Security
+
+   -> We can create any kind of applications as Console/Windows/Web/Service Oriented and Mobile Apps
+
+CLR (Common Language @ Runtime) 
+
+     CLR is responsible for 
+
+	-> Debugging
+
+	-> Exception Handling
+
+	-> Security
+
+	-> Version Support 
+
+
+CLR is the execution engine of .NET applciations.
+
+Provides memory management, garbage collection and 
+exception handling 
+
+Ensures the code executes in a controlled env.
+
+MSIL (IL) {Microsoft Intermediate Langauge}
+
+When you compile any .NET application, at first instead of converting into CPU specific code, first its converted into MSIL. Then it becomes language neutral, there either (exe or dll) file will be created. 
+
+There are basic libraries in .NET as 
+
+(I) BCL (Base Class Libraries) : These are the libraries, that which exists since first version of .NET framework (1.14 onwards) 
+
+(II) FCL (Framework Class Libraries) : These are the libraries, that which are added based on the framework version to the .NET env
+
+	Example : .NET 2.0 added nice asp.net features
+		  .NET 3.5 added LINQ and Entity Framework
+		  .NET 4.0 added Core features of .NET 
+
+Namespaces : Contains group of related classes and interfaces, that which belongs to one common group. If you want to overcome the naming conflicts between classes, then we need the help of namespaces. 
+
+Assemblies : An assembly is a single deployable unit, that which contains the information about Project, Version, CurltureInfo, publicKeyToken etc... An assembly contains group of namespaces, and a single assembly can be shared by multiple assemblies. 
+
+Once you create any assembly file, that can be accessable across any .NET framework language, means .NET assemblies we can use in sharepoint as both are .NET framworks apps.
+
+Assemblies are stored in GAC folder (Global Assembly Cache) 
+
+CTS (Common Type System) : All the .NET framework langauges, needs to undergone one common state w.r.t. data types and ranges, means if integer in C# tables 4 bytes, then asp.net integer needs to take 4 bytes and vb.net integer also needs to take 4 bytes. 
+
+CLS (Common Language Specification) {Language Interoperability} 
+
+The code which is there in one .NET framework language, can be used in another .NET framework language known as language interoperability. 
+
+JIT (Just-In Time Compilation) : Converts the MSIL into CPU specific format. JIT loads only the relevant classes into the memory, that makes execution happens faster.
+
+Compiling and Execution Procedure of .NET application : 
+________________________________________________________
+
+
+(I) When you compile any .NET application, at first instead of converting into CPU specific code, first its converted into MSIL
+
+		Then either exe or dll file will be created
+
+(ii) Then it would be send to class loader There are 2 types of class loaders as
+
+	(a) Primordial Class Loader : Used to load all system classes which are required to run the program. 
+
+	(b) Class Loader Objects : Used to load user-defined classes which are required to run the program. 
+
+(iii) In class loader, we have JIT compiler converts the MSIL into CPU specific format. 
+
+(iv) Then it would be send to execution manager, which contains queue of programs ready to run, where we can execute the program. 
+
+	{before execution program needs to undergone the security auth} 
+
+Object Oriented Programming : It is an approach that provides a way of modularizing programming, that which can be used to create small partition memory area for both data and objects, which are to be used as templates for creating copies of such modules on demand. 
+
+Object : An object is a real world entity, that which possess 3 characterstics known as 
+
+	(I) State
+
+	(ii) Behaviour
+
+	(iii) Identity 
+
+OOPS features : 
+________________
+
+	(I) Encapsulation : Wrapping up of data and functions into a single unit known as encapsulation.  
+
+	(ii) Abstraction : Hiding the irrelevant details of an object that do not contribute to its essential characteristics known as abstraction.
+
+*** Encapsulation focuses on showing the relevant details, where abstraction focuses on hiding the irrelevant details ***
+
+	(iii) Inheritance : Deriving a new entity from already existing entity known as inheritance, through inheritance we can reduce the size of the program. 
+
+	(iv) Polymorphism : The ability to take more than one form known as polymorphism. 
+
+class : A class is a template or blueprint, that which contains combination of data members and member functions. Members of the class can be accessable by using instance of the class. 
+
+class class_name
+{
+    data members;
+    member functions;
+}
+
+Access Modifiers : 
+__________________
+
+(i) private : Allows you to access members within current class.
+
+(ii) public : Allows you to access members in entire application. 
+
+(iii) protected : Allows you to access members within current/derived class.
+
+(iv) internal : Allows you to access members within all classes of current namespace.
+
+(v) protected internal : Allows you to access members within all classes of current namespace, and other namespace derived classes.
+
+Data Types : 
+____________
+
+There are 2 types of data types as 
+
+	(i) value types
+
+		int, float, double, char, bool 
+
+	(ii) reference types 
+
+		string, object and user-defined types. 
+
+*** Value types will be stored in STACK memory, and reference types will be stored in HEAP memory ***
+
+You can define method main() as
+
+static void Main() 
+{
+
+}
+
+Main() must be static, as no class object supposed to call method Main().
+
+Console.WriteLine() : used to display any value or message. 
+
+
+The top level class in java is System.Object where System is the namespace and Object is the class. 
+
+Console.WriteLine("Welcome to C#");
+
+int a=12;
+
+Console.WriteLine("A value is {0}",a);
+
+Console.WriteLine("A value is "+a);
+
+Console.ReadLine() : used to read data from keyboard.
+
+Convert.ToInt32() -> Converts into 32 bit integer
+
+Convert.ToInt64() -> Converts into 64 bit integer
+
+Convert.ToDouble() -> Converts into double datatype.
+
+
+How to declare a method, 
+
+You can declare a method as
+
+access_modifier return_type method_name(parameter(s)) {
+...
+...
+...
+...
+}
+
+if a method will not return any value, then we need to specify as void. 
+
+public void show(String sname) {
+...
+...
+}
+
+*** You can create an object to the class as***
+
+class_name obj =new class_name();
+
+Control Structures : Used to define the flow of the program. There are 2 types of control structures known as 
+
+(i) Branching
+
+	if...else : Executes the statement(s) based on the condition.
+	syntax : 
+		if (condition) {
+			statement(s);
+		} else {
+			statement(s);
+		}
+
+	switch...case : Allows you to make any menu-driven programs. 
+
+	switch(choice) {
+		case exp_1 :
+			statement(s);
+			break;
+		case exp_2 :
+			statement(s);
+			break;
+		....
+		....
+		....
+		default : 
+			statement(s);
+			break;
+	}
+
+(ii) Looping : 
+
+while loop : This loop executes all the statement(s) repeatedly until the condition remains true, if the condition remains false, then it comes out of the loop. 
+
+For every loop, basically there are 3 phases known as 
+
+(i) Initialization -> Performed at the beginning of the loop.
+
+(ii) Condition -> Performed at the conditional part of the loop
+
+(iii) Increment/Decrement : Performed before closing the loop.
+
+syntax : 
+
+while(condition) {
+   statement(s);
+}
+
+For loop : This loop executes all the statements repeatedly until the condition remains true, if the condition remains false it comes out of the loop. 
+
+for(initialization;condition;increment/decrement) {
+   statement(s);
+}
+
+do...while : This loop executes all the statements once and then it checks the condition. if the condition is true, it repeats the statements, else it comes out of the loop. The min. execution of while loop is ZERO times, the min. execution of do...while loop is 1 time. 
+
+do {
+  statement(s);
+} while(condition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Architecture 
+
+

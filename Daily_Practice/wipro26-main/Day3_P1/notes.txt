@@ -1,0 +1,64 @@
+The default namespace in .NET is System.
+
+The top level class in .NET is object 
+
+Object class have various methods as
+
+GetHashCode()
+
+GetType()
+
+ToString() : Returns string value, and it will be called automatically once you print the object. 
+
+Method Overloading : The concept of using the same method name w.r.t. different data types or different parameters known as method overloading. Here, the method name must be same, but no.of parameters or type of parameters we are using here are different. 
+
+public void Show(string sname) {
+...
+...
+}
+
+sname();
+sname("Yash");
+sname("Yash","Vijay");
+sname("Yash","Vijay","Ahmad");
+
+params : Allows you to pass varying parameters in a method. 
+
+class Test 
+{
+	int a,b;
+	a=5;
+	b=7;
+}
+
+A constructor is a special member, which used to initialize the member variables of the class, it is special because it has the same name as that of class name. 
+
+Rules : 
+________
+
+	(i) It will not contains any return type
+
+	(ii) It will not return any value 
+
+        (iii) It will be invoked automatically once the instance of the class created
+
+	(iv) A constructor can be overloaded. 
+
+There are 2 types of constructors known as 
+
+	(i) static constructor : These are called class constructors, which are used to initialize the member variables of the class, these constructors are invoked automatically before control reaches the entry point. These constructors cannot be overloaded.
+
+	(ii) instance constructor : These are the constructors that which are invoked automatically once the instance of the class created.  These constructors can be overloaded.
+
+static variable : These are the variables that which retains existing value irrespective of type of object. 
+
+static class : These classes only contains static methods, we cannot create an object to static class. static methods will be accessable by using class_name. Example for static class is Console 
+
+Console.WriteLine();
+
+dll (A dll an entity that which can be used for purpose of write once and call in multiple projects (dynamic link library) 
+
+
+
+
+
