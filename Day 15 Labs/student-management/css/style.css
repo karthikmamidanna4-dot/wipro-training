@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox used here */
+.timetable-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
